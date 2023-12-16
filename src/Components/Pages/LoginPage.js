@@ -31,7 +31,7 @@ const LoginPage = () => {
                 <button type="submit" class="btn btn-primary  custom-btn" id="loginButton">Login</button>
             </form>
             <div class="mt-3 text-center">
-                <p>Don't have an account? <a href="/register" data-uri="/register">Register here</a></p>
+                <p>Don't have an account? <a href="https://lolek-trolek.github.io/ChessRumble/register" data-uri="/register">Register here</a></p>
             </div>
     </div>
     `;
@@ -81,7 +81,7 @@ async function onLogin(e) {
       },
     };
   
-    const response = await fetch('http://localhost:3000/auths/login', options);
+    const response = await fetch('https://chessrumble.azurewebsites.net/auths/login', options);
   
     if (!response.ok) {
       if(response.status === 401){

@@ -26,7 +26,7 @@ const RegisterPage = () => {
                 <button type="submit" class="btn btn-primary custom-btn" id="registerButton">Register</button>
             </form>
             <div class="mt-3 text-center">
-                <p>Already have an account? <a href="/login">Login here</a></p>
+                <p>Already have an account? <a href="https://lolek-trolek.github.io/ChessRumble/login">Login here</a></p>
             </div>
         </div>`;
     
@@ -85,7 +85,7 @@ async function onRegister(e) {
       },
     };
   
-    const response = await fetch('http://localhost:3000/auths/register', options);
+    const response = await fetch('https://chessrumble.azurewebsites.net/auths/register', options);
   
     if (!response.ok){
       if(response.status === 409){
